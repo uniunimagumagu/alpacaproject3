@@ -1,0 +1,10 @@
+.popup-img {
+    position: absolute;
+    bottom: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    opacity: 0;
+    transition: opacity 3.0s, bottom 3.0s;
+
+}
