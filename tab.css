@@ -4,7 +4,16 @@ body{
 }
 
 .menu_button{
-    position: sticky;/*画面上の位置固定*/
-    top: 0;
+    position: fixed;/*画面上の位置固定/*
+    /*stickyを用いると範囲内で画面に追従する動き
+     *(範囲内ではスクロールに沿って動き、それ以降は端で付いてくる)
+     *fixedの場合は画面内の一か所に固定される(スクロールされない)*/
+
+    top: 30px;/*上からの距離*/
+    right: 30px;/*右からの距離(stickyでは上手く動かない)*/
+
+    width:  20px;/*ボタン幅*/
+    padding:20px;/*高さ*/
+
     /*transform: rotate(360deg);*/
 }
