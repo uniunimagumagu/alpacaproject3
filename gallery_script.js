@@ -30,3 +30,23 @@ lightbox.option({
     $(window).on('load', function(){
       fadeAnime();/* アニメーション用の関数を呼ぶ*/
     });// ここまでページが読み込まれたらすぐに動かしたい場合の記述
+    
+    function showSelectedImage(src, title, text) {
+      var selectedImageContainer = document.getElementById('selected-image-container');
+      var selectedImage = document.getElementById('selected-image');
+      var imageTitle = document.getElementById('title');
+      var imageText = document.getElementById('text');
+
+      selectedImage.src = src;
+      imageTitle.textContent = title;
+      imageText.textContent = text;
+
+      selectedImageContainer.classList.add('active');
+    }
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        var selectedImageContainer = document.getElementById('selected-image-container');
+        selectedImageContainer.classList.remove('active');
+      }
+    });
