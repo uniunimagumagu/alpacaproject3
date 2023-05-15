@@ -4,5 +4,7 @@ body{
 }
 
 .menu_button{
+    position: sticky;/*画面上の位置固定*/
+    top: 100;
     transform: rotate(360deg);
 }
