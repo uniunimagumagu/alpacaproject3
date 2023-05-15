@@ -1,2 +1,1 @@
-"use strict";
-<p>test</p>
+/*javascript 工事中*/
