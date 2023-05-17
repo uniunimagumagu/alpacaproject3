@@ -3,14 +3,29 @@
     <head>
        <meta charset="utf-8">
        <link rel="stylesheet" href="tab.css">
-       <script src="tab.js"></script>
+       <script src="tab.js" defer></script>
+       <!-- ずるなので後で消します -->
+       <script src="https://code.jquery.com/jquery.min.js"></script>
        <title>menu_tab</title>
     </head>
 
     <body>
-       <button class="menu_button">
+       <button class="menu-button" type="reset" onclick="clickTabButton()">
 
        </button>
+       <div class="hidden-menu">
+        ここからタブメニュー 
+        <br>
+        ボタンを押したら引っ込む
+        <br>
+        <a href="https://github.com/uniunimagumagu/alpacaproject3">profile</a>
+        <br>
+        hoge
+        <br>
+        fuga
+        <br>
+        piyo
+       </div>
 
        <p>test
         <br>nagai-nagai-webusaito
