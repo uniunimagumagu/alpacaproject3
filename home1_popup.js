@@ -1,7 +1,27 @@
 "use strict";
 
 const popupImg = document.querySelector('.popup-img');
+let bottomPosition = 0; // 初期の表示位置
+
+function calculatePopupPosition() {
+  const windowHeight = window.innerHeight; // ウィンドウの高さを取得
+  const popupHeight = popupImg.offsetHeight; // ポップアップの高さを取得
+
+  bottomPosition = -popupHeight + windowHeight; // ポップアップの下端がウィンドウの下端に合う位置を計算
+  popupImg.style.bottom = `${bottomPosition}px`; // ポップアップの位置を設定
+}
+
+function handleWindowResize() {
+  calculatePopupPosition();
+}
+
+// ウィンドウのリサイズイベントを監視
+window.addEventListener('resize', handleWindowResize);
+
+// 初期表示位置を計算
+calculatePopupPosition();
+
+// 表示アニメーション
 setTimeout(() => {
-  popupImg.style.bottom = '50px';
-    popupImg.style.opacity = '1';
+  popupImg.style.opacity = '1';
 }, 2000);
