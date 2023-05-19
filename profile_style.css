@@ -1,13 +1,12 @@
+/*これはロゴ画像と横のテキストの表示を大まかに決めてる部分*/
 .logo-container {
+  /*下の二つで横のテキストの位置を画像の真ん中の高さと指定している*/
   display: flex;
   align-items: center;
 }
-
+/*ロゴの表示位置を指定している。*/
 .logo-img {
-  margin-left: 15%;
-  float: left; /* 画像を左にフロート */
-  left: 20px; /* 左方向に20px移動 */
-  top: 10px; /* 上方向に10px移動 */
+  margin-left: 15%;/*大体左上だから横から15％にした*/
 }
 .logo-text {
   margin-left: 100px; /* ロゴ画像とテキストの間隔 ここで並行移動は調整できる*/
@@ -18,17 +17,16 @@
 /*以下はテキストボックスを表示する部分*/
 .container {
   margin-left: 15%;
-  width: 400px; /* 箱の幅 */
+  width: 400px; /* 箱の幅 これは入力文字数に対して可変にしたい？*/
   border: 1px solid #000; /* 箱の境界線 */
   padding: 20px; /* 箱内の余白 */
   box-sizing: border-box; /* 箱の境界線を含めたサイズ指定 */
-  margin-bottom: 10px;
+  margin-bottom: 10px;/*他の要素と接しないように幅とってある*/
 }
-
 .container p {
-  margin: 0; /* 文章の上下の余白を除去 */
+  margin: 0; /* 文章の上下の余白を除去 これのおかげで多少すっきり詰まって見えてる*/
 }
-
+/*線分表示。長さ色は取りあえず*/
 .line {
   border-top: 1px dotted #000;
   margin-top:10px;
