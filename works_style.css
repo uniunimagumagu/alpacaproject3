@@ -1,6 +1,8 @@
+/*worksといっしょ*/
 .logo-container {
   display: flex;
   align-items: center;
+  margin-top:10%;/*上が窮屈だったからすこし離した*/
 }
 
 .logo-img {
