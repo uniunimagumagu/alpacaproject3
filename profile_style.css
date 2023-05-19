@@ -28,3 +28,11 @@
 .container p {
   margin: 0; /* 文章の上下の余白を除去 */
 }
+
+.line {
+  border-top: 1px dotted #000;
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-left:10%;
+  margin-right:10%;
+}
