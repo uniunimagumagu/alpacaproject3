@@ -7,8 +7,8 @@ function calculatePopupPosition() {
   const windowHeight = window.innerHeight; // ウィンドウの高さを取得
   const popupHeight = popupImg.offsetHeight; // ポップアップの高さを取得
 
-  bottomPosition = -popupHeight + windowHeight; // ポップアップの下端がウィンドウの下端に合う位置を計算
-  popupImg.style.bottom = `${bottomPosition}px`; // ポップアップの位置を設定
+  bottomPosition = -popupHeight +windowHeight; // ポップアップの下端がウィンドウの下端に合う位置を計算。これがすごい。
+  popupImg.style.bottom = `${bottomPosition-50}px`; // ポップアップの位置を設定.いまはタイトルにかぶらないように5０だけどこの数字で調整できる。
 }
 
 function handleWindowResize() {

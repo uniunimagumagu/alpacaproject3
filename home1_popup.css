@@ -7,6 +7,13 @@
     opacity: 0;
     transition: opacity 5.0s, bottom 4.5s;
   }
+/*タイトル部分。画像に隠れないようにrelativeでz-indexを２にしている。*/
+  h1 {
+    position: relative;
+    z-index: 2;
+    margin-left: 45%;/*これが真ん中*/
+  }
+  
  /*キラキラの主要部、未完成
   .glitter-wrapper {
  
