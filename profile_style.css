@@ -1,32 +1,30 @@
-.profile-title { 
-    
-  }
-  .profile-top {
-    border: 1px solid #ccc; /* 枠線を設定 */
-    padding: 20px; /* コンテンツと枠線の余白を設定 */
-    width: 800px; /* コンテンツの幅を設定 */
-    left: 2000;
-  }
-.profile-container {
-    border: 1px solid #ccc; /* 枠線を設定 */
-    padding: 20px; /* コンテンツと枠線の余白を設定 */
-    width: 800px; /* コンテンツの幅を設定 */
-  }
-.profile-input {
-    width: 100%; /* テキストボックスの幅を親要素に合わせる */
-    box-sizing: border-box; /* 枠線を含めたボックスサイズを設定 */
-    margin-bottom: 10px; /* テキストボックスとテキストエリアの間の余白を設定 */
-  }
-.profile-textarea {
-    width: 100%; /* テキストエリアの幅を親要素に合わせる */
-    box-sizing: border-box; /* 枠線を含めたボックスサイズを設定 */
-  }
-.logo {
-    /*position: fixed;*/
-    top: 50;
-    left: 50;
-    z-index: 9999;
-  }
-body {
-    font-family: "Mametaro";
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  margin-left: 15%;
+  float: left; /* 画像を左にフロート */
+  left: 20px; /* 左方向に20px移動 */
+  top: 10px; /* 上方向に10px移動 */
+}
+.logo-text {
+  margin-left: 100px; /* ロゴ画像とテキストの間隔 ここで並行移動は調整できる*/
+  font-size: 16px; /* テキストのフォントサイズ */
+  font-weight: bold; /* テキストの太さ */
+}
+
+/*以下はテキストボックスを表示する部分*/
+.container {
+  margin-left: 15%;
+  width: 400px; /* 箱の幅 */
+  border: 1px solid #000; /* 箱の境界線 */
+  padding: 20px; /* 箱内の余白 */
+  box-sizing: border-box; /* 箱の境界線を含めたサイズ指定 */
+  margin-bottom: 10px;
+}
+
+.container p {
+  margin: 0; /* 文章の上下の余白を除去 */
 }
