@@ -53,3 +53,14 @@ body{
     padding-top: 100px;
     padding-right: 50px;/*左右余白*/
 }
+
+.btn-style-link {/*bingGPTから*/
+    /*aタグのstyle要素に加えることでボタン風に
+    できる*/
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: lightslategray;
+    color: #000;
+    text-decoration: none;
+    border-radius: 0.25rem;
+  }
