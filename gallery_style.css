@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/*==================================================
+ギャラリーのためのcss
+===================================*/
+.gallery{
+columns: 4;/*段組みの数*/
+padding:0 15px;/*ギャラリー左右に余白をつける*/
+}
+
+.gallery li {
+    margin-bottom: 20px;/*各画像下に余白をつける*/
+}
+
+/*ギャラリー内のイメージは横幅100%にする*/
+.gallery img{
+  width:100%;
+  height:auto;
+  vertical-align: bottom;/*画像の下にできる余白を削除*/}
+
+/*　横幅900px以下の段組み設定　*/
+@media only screen and (max-width: 900px) {
+  .gallery{
+  columns:3;
+  } 
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery{
+  columns: 2;
+  } 
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  color: #333;
+}
+h2{
+    text-align:left;
+    font-size:2vw;
+    letter-spacing: 0.1em;
+    margin:30px 0;
+    text-transform: uppercase;
+}
+a:hover,
+a:active{
+  text-decoration: none;
+}
+
+h1{
+  text-align: center;
+  font-size:6vw;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin:30px 0;
+}
+
+p{
+  margin:0 10px 10px 10px;
+  word-wrap : break-word;
+}
+.image-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .image-item {
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .image-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  #selected-image-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: #fff;
+    z-index: 9999;
+    visibility: hidden;
+  }
+
+  #selected-image-container.active {
+    visibility: visible;
+  }
+
+  #selected-image {
+    max-width: 100%;
+    max-height: 80vh;
+  }
+
+  #image-info {
+    margin-top: 10px;
+  }
