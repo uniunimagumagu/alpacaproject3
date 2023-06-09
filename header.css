@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    background-color: rgba(35,23,136,0.2);/*サイト構造理解のため色変更*/
+    padding:0;
+    margin:0;
+}
+
+.header{
+    background-color: white;
+    font-size: larger;
+    position: fixed;
+    top:0;
+    width: 100%;
+    padding:10px;/*余白により高さを取る*/
+    color:rgba(64,32,32,1);
+}
+
+.menu-button{
+    position: fixed;/*画面上の位置固定/*
+    /*stickyを用いると範囲内で画面に追従する動き
+     *(範囲内ではスクロールに沿って動き、それ以降は端で付いてくる)
+     *fixedの場合は画面内の一か所に固定される(スクロールされない)*/
+
+    top: 10px;/*上からの距離*/
+    right: 30px;/*右からの距離(stickyでは上手く動かない)*/
+
+    width:  20px;/*ボタン幅*/
+    padding:20px;/*高さ*//*paddingとheightは挙動が違うらしい*/
+    background-color: white;
+
+    /*transform: rotate(360deg);*/
+}
+
+.hidden-menu{
+    display:none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.7);/*画面全体を覆う半透明*/
+    width:  100%;
+    height: 100%;
+    text-align: right;/*右揃え*/
+    padding-top: 100px;
+    padding-right: 50px;/*左右余白*/
+}
