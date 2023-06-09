@@ -28,9 +28,10 @@
 }
 /*線分表示。長さ色は取りあえず*/
 .line {
-  border-top: 1px dotted #000;
+  border-top: 2px dashed #a1af71;
   margin-top:10px;
   margin-bottom:10px;
   margin-left:10%;
   margin-right:10%;
+ 
 }
