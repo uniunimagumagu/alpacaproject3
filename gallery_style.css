@@ -5,12 +5,12 @@
 ===================================*/
 .gallery{
 columns: 4;/*段組みの数*/
-padding:0 15px;/*ギャラリー左右に余白をつける*/
+padding:0 5px;/*ギャラリー左右に余白をつける*/
 text-align: center; /* 画像を中央に寄せる */
 }
 
 .gallery li {
-    margin-bottom: 20px;/*各画像下に余白をつける*/
+    margin-bottom: 10px;/*各画像下に余白をつける*/
     display: inline-block;
     vertical-align: top; /* 画像の上端に揃える */
 }
@@ -18,8 +18,9 @@ text-align: center; /* 画像を中央に寄せる */
 /*ギャラリー内のイメージは横幅100%にする*/
 .gallery img{
   width:100%;
-  height:auto;
+  height:100%;
   object-fit: contain;
+
   /*object-position: top; /* 画像の上端を画面上端に合わせる */
 }
 /*デバイス差、PCでもウィンドウサイズ小さくしたときの表示、どっちがいいかはわからないので残しておく*/
@@ -54,7 +55,7 @@ h2{
     text-align:left;
     font-size:2vw;
     letter-spacing: 0.1em;
-    margin:30px 0;
+    margin:10px 0;
     text-transform: uppercase;
 }
 a:hover,
@@ -67,7 +68,7 @@ h1{
   font-size:6vw;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin:30px 0;
+  margin:1px 0;
 }
 
 p{
@@ -81,14 +82,16 @@ p{
   }
 
   .image-item {
-    margin: 10px;
+    margin: 1px;
     cursor: pointer;
+    
   }
 
   .image-item img {
-    width: 150px;
-    height: 150px;
+    width: auto;
+    height: auto;
     object-fit: cover;
+    max-width: 100%;
   }
 
   #selected-image-container {
@@ -97,7 +100,7 @@ p{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
+    padding: 20px;/*画像選択したときの黒い背景の幅*/
     color: #fff;
     z-index: 9999;
     visibility: hidden;
@@ -109,9 +112,9 @@ p{
 
   #selected-image {
     max-width: 100%;
-    max-height: 70dvh;
+    max-height: 70vh;
   }
 
   #image-info {
-    margin-top: 10px;
+    margin-top: 1px;
   }
