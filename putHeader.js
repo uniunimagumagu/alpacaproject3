@@ -4,7 +4,9 @@ function putHeader(){
         url: "header.html",
         cache: false,
         success: function(html){
-            document.write(html);
+            /*document.write(html);*/
+            document.getElementById("header").innerHTML=html
+            console.log(html)
         }
     });
 }

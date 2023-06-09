@@ -5,7 +5,6 @@ function putFooter(){
         cache: false,
         success: function(html){
             /*document.write(html);*/
-            console.log(html)
             document.getElementById("footer").innerHTML = html
         }
     });
