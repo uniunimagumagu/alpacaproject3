@@ -1,9 +1,9 @@
-body{
+/*body{
     text-align: center;
-    background-color: rgba(35,23,136,0.2);/*サイト構造理解のため色変更*/
+    background-color: rgba(35,23,136,0.2);//サイト構造理解のため色変更
     padding:0;
     margin:0;
-}
+}*/
 
 .header{
     background-color: white;
@@ -13,6 +13,8 @@ body{
     width: 100%;
     padding:10px;/*余白により高さを取る*/
     color:rgba(64,32,32,1);
+
+    z-index: 255;
 }
 
 .menu-button{
@@ -27,7 +29,8 @@ body{
     width:  20px;/*ボタン幅*/
     padding:20px;/*高さ*//*paddingとheightは挙動が違うらしい*/
     background-color: white;
-
+    
+    z-index: 255;
     /*transform: rotate(360deg);*/
 }
 
@@ -42,4 +45,6 @@ body{
     text-align: right;/*右揃え*/
     padding-top: 100px;
     padding-right: 50px;/*左右余白*/
+    
+    z-index: 255;
 }

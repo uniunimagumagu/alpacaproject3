@@ -1,25 +1,117 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Works</title>
-    <link rel="stylesheet" href="works_style.css"> <!-- CSSファイルを読み込む -->
-  </head>
-  <body>
-    <div class="profile-title">
-      <h1>Works</h1>
-      <div class="logo-container">
-        <img src="mini.jpg" alt="ロゴ" class="logo-img">
-        <span class="logo-text">しいろ歌ってみた</span>
-        <a href="https://www.youtube.com/watch?v=36Pa0c0Sg5g" target="_blank" rel="noopener noreferrer">このYouTube動画を見る</a><!--youtubeのリンクはv=以降だけを変更すればよい-->
-      </div>
-      <div class="line"></div>
 
-      <div class="logo-container">
-        <img src="mini.jpg" alt="ロゴ" class="logo-img">
-        <span class="logo-text">しいろ踊ってみた</span>
-        <a href="https://www.youtube.com/watch?v=36Pa0c0Sg5g" target="_blank"  rel="noopener noreferrer">このYouTube動画を見る</a>
+<head>
+  <title>Works</title>
+  <link rel="stylesheet" href="works_style.css"> <!-- CSSファイルを読み込む -->
+
+  <!--ヘッダとフッダ用のstyle,srcをロード-->
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <script src="header.js" defer></script>
+
+  <!--jQuery(jsライブラリ)のロード-->
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!--ヘッダ部分-->
+  <div class="hidden-menu">
+    <a style="color:black; text-decoration: none;" href="profile.html">profile</a>
+    <br>
+    <a style="color:black; text-decoration: none;" href="gallery.html">gallery</a>
+    <br>
+    <a style="color:black; text-decoration: none;" href="works.html">works</a>
+    <br>
+    <a style="color:black; text-decoration: none;" href="contact.html">contact</a>
+    <br>
+    タブメニュー
+    <br>
+    ボタンを押したら引っ込む
+  </div>
+  <div class="header">
+    <!--ヘッダ(固定かスクロール仕様かはお好みで)-->
+    　shiiroiro
+  </div>
+
+  <button class="menu-button" type="reset" onclick="clickTabButton()">
+    <!--メニュー表示ボタン-->
+  </button>
+
+  <div style="height:20px;"><!--ヘッダが配置される部分に空白行を挿入-->
+  </div>
+  <!--ヘッダ終了-->
+
+  <div class="profile-title">
+    <h1>Works</h1>
+    <div class="logo-container">
+      <img src="mini.jpg" alt="ロゴ" class="logo-img">
+      <span class="logo-text">しいろ歌ってみた</span>
+      <a href="https://www.youtube.com/watch?v=36Pa0c0Sg5g" target="_blank"
+        rel="noopener noreferrer">このYouTube動画を見る</a><!--youtubeのリンクはv=以降だけを変更すればよい-->
+    </div>
+    <div class="line"></div>
+
+    <div class="logo-container">
+      <img src="mini.jpg" alt="ロゴ" class="logo-img">
+      <span class="logo-text">しいろ踊ってみた</span>
+      <a href="https://www.youtube.com/watch?v=36Pa0c0Sg5g" target="_blank" rel="noopener noreferrer">このYouTube動画を見る</a>
+    </div>
+  </div>
+  
+    <!--フッタ部分-->
+    <div style="height: 888px;"></div>
+    <div class="footer">
+      <div>
+        <a class="btn-style-link" style="font-size:larger;" href="index.html">shiiroiro</a>
+        <br><!--外部サイトへのリンクは新しいタブで呼び出す-->
+        <br>
+        <a style="color:inherit; text-decoration: none;" href="https://twitter.com/shiiro_illust" target="_blank"
+          rel="noopener noreferrer">twitter</a>
+        <br>
+        <a style="color:inherit; text-decoration: none;" href="https://www.instagram.com/meiji_university/"
+          target="_blank" rel="noopener noreferrer">instagram</a>
+        <br>
+        <a style="color:inherit; text-decoration: none;" href="https://www.pixiv.net/" target="_blank"
+          rel="noopener noreferrer">pixiv</a>
       </div>
-    
-   
-  </body>
+      <div>
+        <a style="color:inherit; text-decoration: none;" href="profile.html">profile</a>
+        <br>
+        <br>
+        <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">about</a>
+        <br>
+        <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">goods</a>
+        <br>
+        <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">making</a>
+        <br>
+        <a style="color:inherit; text-decoration: none;" href="https://www.google.com/" target="_blank"
+          rel="noopener noreferrer">fanbox</a>
+        <br>
+        <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">loveletter</a>
+      </div>
+      <div>
+        <a style="color:inherit; text-decoration: none;" href="gallery.html">gallery</a>
+      </div>
+      <div>
+        <a style="color:inherit; text-decoration: none;" href="works.html">works</a>
+      </div>
+      <div>
+        <a style="color:inherit; text-decoration: none;" href="contact.html">contact</a>
+        <br>
+        <br>
+        <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">mailform</a>
+        <br>
+        <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">attension</a>
+      </div>
+  
+    </div>
+    <!--フッタ終了-->
+
+
+
+</body>
+
 </html>
