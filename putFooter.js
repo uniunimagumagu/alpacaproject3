@@ -6,6 +6,7 @@ function putFooter(){
         success: function(html){
             /*document.write(html);*/
             document.getElementById("footer").innerHTML = html
+            console.log("footer loaded")
         }
     });
 }

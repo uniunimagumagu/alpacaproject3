@@ -6,7 +6,7 @@ function putHeader(){
         success: function(html){
             /*document.write(html);*/
             document.getElementById("header").innerHTML=html
-            console.log(html)
+            console.log("header loaded")
         }
     });
 }
