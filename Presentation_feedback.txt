@@ -2,7 +2,7 @@
 contact-mailform,attentionの親子構造contact/mailformへのリンク
 profile - about,goods,making,fanbox,loveletterの構造 fb,llは外部リンク
 
-文字は黒よりの茶色に,フォント(マメロン)
+//文字は黒よりの茶色に,フォント(マメロン)
 
 各ページは見出し毎に点線で区切る
 

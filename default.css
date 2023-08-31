@@ -1,0 +1,13 @@
+@font-face{
+    font-family:"Mamelon3";/*マメロンのウエイト3をインポート*/
+    src: url("./font/Mamelon-3HiRegular.woff2") format("woff2"),
+         url("./font/Mamelon-3HiRegular.eot") format("eot");
+}
+
+body{
+    font-family: "Mamelon3",sans-serif;/*マメロン,無ければゴシック体*/
+    color: rgb(64,32,32);
+    text-align: center;
+    padding:0;
+    margin:0;
+}
