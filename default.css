@@ -44,8 +44,8 @@ body{
     cursor:pointer;
 }
 .menu-button:active{
-    transition: 0.2s;
-    transform: rotate(180deg);
+    transition: 0.3s;
+    transform: rotateX(180deg);
 }
 
 .hidden-menu{
