@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="default.css">
+    <!--ヘッダとフッダ用のstyle,srcをロード-->
+    <script src="header.js" defer></script>
+
+    <!--アイコン(ファビコン) 本番は.icoファイルを利用予定だが代用画像を利用-->
+    <link rel="shortcut icon" href="mini.jpg">
+  
+    <!--jQuery(jsライブラリ)のロード-->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+  
+  <style>
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .text-section {
+      margin-bottom: 20px;
+      color: black; /* 文字の色を白に設定 */
+      font-family: "Arial Rounded MT Bold", Arial, sans-serif; /* 丸いフォントを設定 */
+    }
+
+    .mail-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: orange; /* ボタンの色をオレンジに設定 */
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .mail-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .mail-button:focus {
+      box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <!--ヘッダ部分-->
+  <div class="hidden-menu">
+    <a style="color:black; text-decoration: none;" href="profile.html">profile</a>
+    <br>
+    <a style="color:black; text-decoration: none;" href="gallery.html">gallery</a>
+    <br>
+    <a style="color:black; text-decoration: none;" href="works.html">works</a>
+    <br>
+    <a style="color:black; text-decoration: none;" href="contact.html">contact</a>
+    <br>
+ </div>
+ <div class="header">
+    <!--ヘッダ(固定かスクロール仕様かはお好みで)-->
+    <a style="color:rgb(64,32,32);text-decoration:none;" href="index.html">shiiroiro</a>
+ </div>
+          
+ <button class="menu-button" type="reset" onclick="clickTabButton()">
+  <!--メニュー表示ボタン-->
+ </button>
+
+  <div style="height:20px;"><!--ヘッダが配置される部分に空白行を挿入-->
+  </div>
+  <!--ヘッダ終了-->
+
+  <div class="container">
+    <div class="text-section">
+      <h2>Contact Us</h2>
+      <p>お問い合わせに関するテキストをここに追加します。</p>
+    </div>
+    <div class="mail-button">
+      <a href="mailto:example@example.com" style="color: inherit; text-decoration: none;">メールを送る</a>
+    </div>
+    
+     
+  </div>
+
+  <!--フッタ部分-->
+  <div style="height: 888px;"></div>
+  <div class="footer">
+    <div>
+      <a class="btn-style-link" style="font-size:larger;" href="index.html">shiiroiro</a>
+      <br><!--外部サイトへのリンクは新しいタブで呼び出す-->
+      <br>
+      <a style="color:inherit; text-decoration: none;" href="https://twitter.com/shiiro_illust" target="_blank"
+        rel="noopener noreferrer">twitter</a>
+      <br>
+      <a style="color:inherit; text-decoration: none;" href="https://www.instagram.com/meiji_university/"
+        target="_blank" rel="noopener noreferrer">instagram</a>
+      <br>
+      <a style="color:inherit; text-decoration: none;" href="https://www.pixiv.net/" target="_blank"
+        rel="noopener noreferrer">pixiv</a>
+    </div>
+    <div>
+      <a style="color:inherit; text-decoration: none;" href="profile.html">profile</a>
+      <br>
+      <br>
+      <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">about</a>
+      <br>
+      <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">goods</a>
+      <br>
+      <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">making</a>
+      <br>
+      <a style="color:inherit; text-decoration: none;" href="https://www.google.com/" target="_blank"
+        rel="noopener noreferrer">fanbox</a>
+      <br>
+      <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">loveletter</a>
+    </div>
+    <div>
+      <a style="color:inherit; text-decoration: none;" href="gallery.html">gallery</a>
+    </div>
+    <div>
+      <a style="color:inherit; text-decoration: none;" href="works.html">works</a>
+    </div>
+    <div>
+      <a style="color:inherit; text-decoration: none;" href="contact.html">contact</a>
+      <br>
+      <br>
+      <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">mailform</a>
+      <br>
+      <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">attension</a>
+    </div>
+
+  </div>
+  <!--フッタ終了-->
+   
+</body>
+</html>
