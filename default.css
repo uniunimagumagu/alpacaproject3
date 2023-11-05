@@ -76,7 +76,7 @@ body{
 }
 
 
-.btn-style-link {/*bingGPTから*/
+.btn-style-link {
     /*aタグのstyle要素に加えることでボタン風に
     できる*/
     display: inline-block;

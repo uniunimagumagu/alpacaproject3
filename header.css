@@ -27,6 +27,11 @@
     /*transform: rotate(360deg);*/
 }
 
+.menu-button:active{
+    transition: 0.3s;
+    transform: rotateX(180deg);
+}
+
 .hidden-menu{
     display:none;
     position: fixed;
