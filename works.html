@@ -11,7 +11,7 @@
   <script src="header.js" defer></script>
 
   <!--アイコン(ファビコン) 本番は.icoファイルを利用予定だが代用画像を利用-->
-  <link rel="shortcut icon" href="mini.jpg">
+  <link rel="shortcut icon" href="fabicon.png">
 
   <!--jQuery(jsライブラリ)のロード-->
   <script src="https://code.jquery.com/jquery.min.js"></script>
@@ -36,9 +36,8 @@
     <a style="color:rgb(64,32,32);text-decoration:none;" href="index.html">shiiroiro</a>
   </div>
 
-  <button class="menu-button" type="reset" onclick="clickTabButton()">
+  <img class="menu-button" tabindex="-1" type="reset" onclick="clickTabButton()" src="menu_button.png" style="width:50px; height:50px; background-color:rgba(0,0,0,0)">
     <!--メニュー表示ボタン-->
-  </button>
 
   <div style="height:50px;"><!--ヘッダが配置される部分に空白行を挿入-->
   </div>
