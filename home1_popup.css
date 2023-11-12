@@ -7,6 +7,12 @@
     opacity: 0;
     transition: opacity 5.0s, bottom 4.5s;
   }
+
+/*画像に隠れる範囲*/
+#popup-area {
+  height: 800px;
+}
+
 /*タイトル部分。画像に隠れないようにrelativeでz-indexを２にしている。*/
   h1 {
     position: relative;
