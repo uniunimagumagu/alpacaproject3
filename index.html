@@ -20,31 +20,13 @@
 
 <body>
   <!--ヘッダ部分-->
-  <div class="hidden-menu">
-    <a style="color:rgb(64,32,32); text-decoration: none;" href="profile.html">profile</a>
-    <br>
-    <a style="color:rgb(64,32,32); text-decoration: none;" href="gallery.html">gallery</a>
-    <br>
-    <a style="color:rgb(64,32,32); text-decoration: none;" href="works.html">works</a>
-    <br>
-    <a style="color:rgb(64,32,32); text-decoration: none;" href="contact.html">contact</a>
-    <br>
-  </div>
-  <div class="header">
-    <!--ヘッダ(固定かスクロール仕様かはお好みで)-->
-    <a style="color:rgb(64,32,32);text-decoration:none;" href="index.html">shiiroiro</a>
-  </div>
-
-  <img class="menu-button" tabindex="-1" type="reset" onclick="clickTabButton()" src="menu_button.png" style="width:50px; height:50px; background-color:rgba(0,0,0,0)">
-  <!--メニュー表示ボタン-->
-
-
-  <div style="height:50px;"><!--ヘッダが配置される部分に空白行を挿入-->
-  </div>
+  <div id="headerArea"></div>
+  <script src="putHeader.js"></script>
+  <script src="header.js"></script>
+  <script>putHeader()</script>
   <!--ヘッダ終了-->
   <!--以下サイト本体を記述-->
 
-  <!-- <h1>shiiroiro</h1> ヘッダと重複するためカット-->
   <!--<div class="glitter-wrapper">これはキラキラさせるようにつけてる。未完成-->
   <img class="popup-img" src="toppage_sample.png">
   <script src="home1_popup.js" defer></script>
@@ -53,51 +35,9 @@
   
   <div id="popup-area"></div>
   <!--フッタ部分-->
-  <div class="footer">
-    <div>
-      <a style="color:inherit; text-decoration: none;" href="index.html">shiiroiro</a>
-      <br><!--外部サイトへのリンクは新しいタブで呼び出す-->
-      <br>
-      <a style="color:inherit; text-decoration: none;" href="https://twitter.com/shiiro_illust" target="_blank"
-        rel="noopener noreferrer">twitter</a>
-      <br>
-      <a style="color:inherit; text-decoration: none;" href="https://www.instagram.com/meiji_university/"
-        target="_blank" rel="noopener noreferrer">instagram</a>
-      <br>
-      <a style="color:inherit; text-decoration: none;" href="https://www.pixiv.net/" target="_blank"
-        rel="noopener noreferrer">pixiv</a>
-    </div>
-    <div>
-      <a style="color:inherit; text-decoration: none;" href="profile.html">profile</a>
-      <br>
-      <br>
-      <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">about</a>
-      <br>
-      <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">goods</a>
-      <br>
-      <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">making</a>
-      <br>
-      <a style="color:inherit; text-decoration: none;" href="https://www.google.com/" target="_blank"
-        rel="noopener noreferrer">fanbox</a>
-      <br>
-      <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">loveletter</a>
-    </div>
-    <div>
-      <a style="color:inherit; text-decoration: none;" href="gallery.html">gallery</a>
-    </div>
-    <div>
-      <a style="color:inherit; text-decoration: none;" href="works.html">works</a>
-    </div>
-    <div>
-      <a style="color:inherit; text-decoration: none;" href="contact.html">contact</a>
-      <br>
-      <br>
-      <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">mailform</a>
-      <br>
-      <a style="color:inherit; text-decoration: none;" href="https://www.google.com/">attension</a>
-    </div>
-
-  </div>
+  <div id="footerArea"></div>
+  <script src="putFooter.js"></script>
+  <script>putFooter()</script>
   <!--フッタ終了-->
 
 </body>

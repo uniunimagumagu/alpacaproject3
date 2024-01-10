@@ -20,11 +20,13 @@
     right: 30px;/*右からの距離(stickyでは上手く動かない)*/
 
     width:  20px;/*ボタン幅*/
-    padding:20px;/*高さ*//*paddingとheightは挙動が違うらしい*/
+    height: 20px;
+    margin:20px;/*高さ*//*paddingとheightは挙動が違うらしい*/
     background-color: white;
     
     z-index: 255;
-    /*transform: rotate(360deg);*/
+
+    cursor:pointer;
 }
 
 .menu-button:active{

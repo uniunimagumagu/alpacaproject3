@@ -4,8 +4,7 @@ function putFooter(){
         url: "footer.html",
         cache: false,
         success: function(html){
-            /*document.write(html);*/
-            document.getElementById("footer").innerHTML = html
+            document.getElementById("footerArea").innerHTML = html
             console.log("footer loaded")
         }
     });

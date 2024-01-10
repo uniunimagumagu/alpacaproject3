@@ -25,6 +25,10 @@ body{
     z-index: 255;
 }
 
+#headerArea{
+    height: 56px;
+}
+
 .menu-button{
     position: fixed;/*画面上の位置固定/*
     /*stickyを用いると範囲内で画面に追従する動き
@@ -75,6 +79,20 @@ body{
     color: white;
 }
 
+
+.footerlist-title {
+    font-size:large;
+    color:inherit;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .footerlist-element {
+    color:inherit;
+    text-decoration: none;
+    list-style: none;
+    padding:0px;
+  }
 
 .btn-style-link {
     /*aタグのstyle要素に加えることでボタン風に
