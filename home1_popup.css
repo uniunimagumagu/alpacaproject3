@@ -1,25 +1,31 @@
-.popup-img {
-    position: absolute;
-    bottom: -200em;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    opacity: 0;
-    transition: opacity 5.0s, bottom 4.5s;
-  }
+.fade-in-image {
+  background-color: lightgray;
+  opacity: 0.3;
+  transition: opacity 2s ease-in-out;
+  margin-left: 50%;
+  margin-top: 5%;
+  
+}
+
+.fade-in-image.loaded {
+  opacity: 1;
+}
+
 
 /*画像に隠れる範囲*/
+/*
 #popup-area {
   height: 800px;
 }
-
+*/
 /*タイトル部分。画像に隠れないようにrelativeでz-indexを２にしている。*/
+/*
   h1 {
     position: relative;
     z-index: 2;
-    margin-left: 45%;/*これが真ん中*/
-  }
-  
+    margin-left: 45%;/*これが真ん中
+  } 
+  */
  /*キラキラの主要部、未完成
   .glitter-wrapper {
  
