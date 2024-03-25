@@ -2,9 +2,10 @@
   background-color: lightgray;
   opacity: 0.3;
   transition: opacity 2s ease-in-out;
-  margin-left: 50%;
+  margin-left: 10%;
   margin-top: 5%;
-  
+  width: 1500px;
+  height: auto;
 }
 
 .fade-in-image.loaded {

@@ -12,9 +12,10 @@
   height: auto; /* 高さを自動調整 */
 }
 .logo-text {
-  margin-left: 100px; /* ロゴ画像とテキストの間隔 ここで並行移動は調整できる*/
+  margin-left: 30%; /* ロゴ画像とテキストの間隔 ここで並行移動は調整できる*/
   font-size: 16px; /* テキストのフォントサイズ */
   font-weight: bold; /* テキストの太さ */
+  text-align: left;
 }
 
 /*以下はテキストボックスを表示する部分*/
