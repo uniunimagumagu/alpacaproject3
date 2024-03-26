@@ -4,6 +4,7 @@
   <meta charset="utf8">
   <title>Contact</title>
   <link rel="stylesheet" href="default.css">
+  <link rel="stylesheet" href="contact.css">
     <!--ヘッダとフッダ用のstyle,srcをロード-->
     <script src="header.js" defer></script>
 
@@ -11,64 +12,53 @@
     <link rel="shortcut icon" href="fabicon.png">
   
     <!--jQuery(jsライブラリ)のロード-->
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-  
-  <style>
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .text-section {
-      margin-bottom: 20px;
-      color: black; /* 文字の色を白に設定 */
-      font-family: "Arial Rounded MT Bold", Arial, sans-serif; /* 丸いフォントを設定 */
-    }
-
-    .mail-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: orange; /* ボタンの色をオレンジに設定 */
-      color: white;
-      text-decoration: none;
-      border: none;
-      border-radius: 4px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-size: 16px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .mail-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .mail-button:focus {
-      box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
-    }
-  </style>
+    <script src="https://code.jquery.com/jquery.min.js"></script>  
 </head>
 <body>
   <!--ヘッダ部分-->
-
   <div id="headerArea"></div>
   <script src="putHeader.js"></script>
   <script src="header.js"></script>
   <script>putHeader()</script>
   <!--ヘッダ終了-->
 
-  <div class="container">
+  <div class="container" style="width:1000px; margin: 0 auto;">
     <div class="text-section">
-      <h2>Contact Us</h2>
-      <p>お問い合わせに関するテキストをここに追加します。</p>
+      <h1>contact</h1>
+      <address>
+        <p>
+          お問い合わせは、メール<br>
+          shiiroiro@gmail.com<br>
+          にて受け付けております。
+        </p>
+      </address>
+         お問い合わせの際、可能な範囲で構いませんので下記の情報を記載いただけますと幸いです。
+      <ul>
+        <li>お問い合わせ概要</li><!--私のためにwebサイトを作ってほしい-->
+        <li>原稿料</li><!--私たち友達だよね！-->
+        <li>納期</li><!--はやく-->
+        <li>同人誌、画集への掲載可否</li><!---->
+        <li>契約書の有無</li><!--無いよ-->
+        <li>実績公開について</li><!--勝手にどうぞ-->
+      </ul><!--エンジニアに人権はあるのでしょうか-->
+        ▼現在お引き受けを見送らせていただいているもの<br>
+        (申し訳ございませんが、個別でのお返事が出来かねます。)
+        <ul>
+          <li>個人様からのご依頼 / 個人様のご依頼は大変恐縮ですが<a href="https://skeb.jp/@shiiro_illust" style="color: inherit" target="_blank" rel="noopener noreferrer">skeb</a>の方をご利用ください。</li>
+          <li>年齢制限のかかるコンテンツ</li>
+          <li>既存イラストのグッズ化のご提案</li>
+          <li>登録系のお誘い</li>
+          <li>無償でのイラスト制作</li>
+        </ul>
+      <p>
+        <a href="https://r11r.jp/creator/15868/" style="color: inherit" target="_blank" rel="noopener noreferrer">R11R</a> <br>
+        クリエイティブスタジオ・R11R様とパートナークリエイターとして提携していただいております。R11R様を介してのご依頼も受け付けております。
+      </p>
     </div>
-    <div class="mail-button">
-      <a href="mailto:example@example.com" style="color: inherit; text-decoration: none;">メールを送る</a>
+    <div class="btn-style-link">
+      <a href="mailto:shiiroiro@gmail.com" style="color: inherit">メールを送る</a>
     </div>
+    <br>
     
      
   </div>
