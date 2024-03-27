@@ -53,10 +53,11 @@
   margin-left:10%;
   margin-right:10%;
 }
-.small-image {
-  /*margin-left: 100px;*/
-  width: 50px; /* 画像の幅を50pxに設定 */
-  height: auto; /* 高さを自動調整 */
+.sns-images {
+  display: flex;
+  justify-content: space-between; /* 画像間に均等なスペースを設ける */
+  margin: 20px auto; /* 上下のマージンを設定し、左右は自動で中央揃え */
+  max-width: 400px; /* コンテナの最大幅を指定 */
 }
 .profile-images {
   display: flex;
@@ -65,7 +66,7 @@
 }
 
 .small-sns-image {
-  width: auto; /* 幅を自動調整 */
-  height: 100px; /* 高さを指定 */
-  object-fit: cover; /* 画像のアスペクト比を保持 */
+  flex: 1; /* 画像を等間隔で伸縮させる */
+  max-width: 25%; /* 各画像がコンテナ幅の25%を超えないようにする */
+  height: auto; /* 高さを自動調整 */
 }
