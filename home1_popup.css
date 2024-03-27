@@ -1,10 +1,10 @@
 .fade-in-image {
   background-color: lightgray;
   opacity: 0.3;
-  transition: opacity 2s ease-in-out;
+  transition: opacity 3s ease-in-out;
   margin-left: 10%;
   margin-top: 5%;
-  width: 1500px;
+  width: 100%;
   height: auto;
 }
 

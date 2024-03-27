@@ -4,78 +4,61 @@
 <meta charset="utf-8">
 <title>Gallery</title>
 <meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
-
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<!--==============レイアウトを制御CSSを読み込み===============-->
+<!-- レイアウトを制御CSSを読み込み -->
 <link rel="stylesheet" href="default.css">
 <link rel="stylesheet" type="text/css" href="gallery_style.css">
 
-  <!--ヘッダとフッダ用のstyle,srcをロード-->
-  <script src="header.js" defer></script>
+<!-- ヘッダとフッダ用のscriptをロード -->
+<script src="header.js" defer></script>
+<script src="footer.js" defer></script>
 
-  <!--アイコン(ファビコン) 本番は.icoファイルを利用予定だが代用画像を利用-->
-  <link rel="shortcut icon" href="fabicon.png">
+<!-- アイコン(ファビコン) 本番は.icoファイルを利用予定だが代用画像を利用 -->
+<link rel="shortcut icon" href="fabicon.png">
 
-  <!--jQuery(jsライブラリ)のロード-->
-  <script src="https://code.jquery.com/jquery.min.js"></script>
+<!-- jQuery(jsライブラリ)のロード -->
+<script src="https://code.jquery.com/jquery.min.js"></script>
 
 </head>
 
 <body>
-  <div></div>
-    <h2>Gallery</h2>
-
-  <!--ヘッダ部分-->
-  
+  <!-- ヘッダ部分 -->
   <div id="headerArea"></div>
-  <script src="putHeader.js"></script>
-  <script src="header.js"></script>
-  <script>putHeader()</script>
-  <!--ヘッダ終了-->
-    
-<div class="image-list">
-  <ul class="gallery">
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/02.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/02.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/03.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/03.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/04.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/04.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/05.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/05.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/06.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/06.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/07.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/07.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/08.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/08.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/09.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/09.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/10.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/10.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/11.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/11.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/12.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/12.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/13.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/13.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/14.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/14.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/15.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/15.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/16.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/16.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/17.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/17.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/18.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/18.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/19.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/19.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/20.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/20.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/21.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/21.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/22.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/22.jpg" alt="Image 2"></div>
-        <div class="image-item" onclick="showSelectedImage('https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/23.jpg', '作った日', 'タイトル')"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/23.jpg" alt="Image 2"></div>
-      
-     </ul>
-</div>
+  <!-- ヘッダ終了 -->
+  <div id="overlay"></div>
 
-<div id="selected-image-container">
+  
+  <!-- 画像ギャラリー -->
+  <div class="image-list">
+    <ul class="gallery">
+      <li class="image-item"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/02.jpg" alt="Image 2"></li>
+      <li class="image-item"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/03.jpg" alt="Image 3"></li>
+      <li class="image-item"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/04.jpg" alt="Image 4"></li>
+      <li class="image-item"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/05.jpg" alt="Image 5"></li>
+      <li class="image-item"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/06.jpg" alt="Image 6"></li>
+      <li class="image-item"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/07.jpg" alt="Image 7"></li>
+      <li class="image-item"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/08.jpg" alt="Image 8"></li>
+      <li class="image-item"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/09.jpg" alt="Image 9"></li>
+      <li class="image-item"><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-1/img/10.jpg" alt="Image 10"></li>
+    </ul>
+  </div>
+  <!-- 画像ギャラリー終了 -->
+  
+  <!-- 選択された画像の詳細表示 -->
+  <div id="selected-image-container">
     <img id="selected-image" src="" alt="Selected Image">
     <div id="image-info">
       <h2 id="title"></h2>
       <p id="text"></p>
     </div>
   </div>
+  <!-- 選択された画像の詳細表示終了 -->
   
-  <!--フッタ部分-->
- 
+  <!-- フッタ部分 -->
   <div id="footerArea"></div>
-  <script src="putFooter.js"></script>
-  <script>putFooter()</script>
-  <!--フッタ終了-->
+  <!-- フッタ終了 -->
 
-<script src="gallery_script.js"></script>
+  <!-- スクリプト -->
+  <script src="gallery_script.js"></script>
 </body>
 </html>
