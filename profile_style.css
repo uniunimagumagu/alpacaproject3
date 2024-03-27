@@ -5,6 +5,22 @@
   align-items: center;
   
 }
+.text-section{
+  color: rgb(64,32,32);
+  text-align: left;
+  padding:0;
+  margin:0;
+}
+.btn-style-link {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: rgb(64,32,32);
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+
 /*ロゴの表示位置を指定している。*/
 .logo-img {
   margin-left: 15%;/*大体左上だから横から15％にした*/
@@ -22,7 +38,6 @@
 .container {
   margin-left: 15%;
   width: 400px; /* 箱の幅 これは入力文字数に対して可変にしたい？*/
-  border: 1px solid #000; /* 箱の境界線 */
   padding: 20px; /* 箱内の余白 */
   box-sizing: border-box; /* 箱の境界線を含めたサイズ指定 */
   margin-bottom: 10px;/*他の要素と接しないように幅とってある*/
@@ -42,4 +57,15 @@
   /*margin-left: 100px;*/
   width: 50px; /* 画像の幅を50pxに設定 */
   height: auto; /* 高さを自動調整 */
+}
+.profile-images {
+  display: flex;
+  justify-content: space-around; /* 画像間に均等なスペースを設ける */
+  margin: 20px 0; /* 上下のマージンを設定 */
+}
+
+.small-sns-image {
+  width: auto; /* 幅を自動調整 */
+  height: 100px; /* 高さを指定 */
+  object-fit: cover; /* 画像のアスペクト比を保持 */
 }
