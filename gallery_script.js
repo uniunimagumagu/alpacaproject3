@@ -1,52 +1,58 @@
-//lightbox オプションの設定※https://lokeshdhakar.com/projects/lightbox2/#options参照
+document.addEventListener('DOMContentLoaded', function() {
+  const selectedImageContainer = document.getElementById('selected-image-container');
+  const overlay = document.getElementById('overlay'); // オーバーレイの要素を取得
+  const closeBtn = document.getElementById('close-btn');
 
-lightbox.option({
-    'wrapAround': true,//グループ最後の写真の矢印をクリックしたらグループ最初の写真に戻る
-    'albumLabel': ' %1 / total %2 '//合計枚数中現在何枚目かというキャプションの見せ方を変更できる
-  })
-  
-  //ふわっと見せるためのJS。3-5-3 ページが読み込まれたらすぐに動かしたい&画面をスクロールをしたら動かしたい場合内のソースコード使用
-  
-  function fadeAnime(){
-  // flipLeft
-  $('.gallery li').each(function(){ 
-      var elemPos = $(this).offset().top;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
-      if (scroll >= elemPos - windowHeight){
-          $(this).addClass('flipLeft');
-      }else{
-          $(this).removeClass('flipLeft');
-      }
-  });
-  }
-  
-  // 画面をスクロールをしたら動かしたい場合の記述
-    $(window).scroll(function (){
-      fadeAnime();/* アニメーション用の関数を呼ぶ*/
-    });// ここまで画面をスクロールをしたら動かしたい場合の記述
-  
-  // ページが読み込まれたらすぐに動かしたい場合の記述
-    $(window).on('load', function(){
-      fadeAnime();/* アニメーション用の関数を呼ぶ*/
-    });// ここまでページが読み込まれたらすぐに動かしたい場合の記述
-    
-    function showSelectedImage(src, title, text) {
-      var selectedImageContainer = document.getElementById('selected-image-container');
-      var selectedImage = document.getElementById('selected-image');
-      var imageTitle = document.getElementById('title');
-      var imageText = document.getElementById('text');
-
-      selectedImage.src = src;
-      imageTitle.textContent = title;
-      imageText.textContent = text;
-
-      selectedImageContainer.classList.add('active');
+  // 画像アイテムがクリックされた時のイベントリスナーを設定
+  document.querySelector('.image-list').addEventListener('click', function(event) {
+    const imageItem = event.target.closest('.image-item');
+    if (imageItem) {
+      const imgElement = imageItem.querySelector('img');
+      const src = imgElement.src;
+      // 仮の日付とタイトル、これらは動的に変更可能
+      const date = '作った日';
+      const title = 'タイトル';
+      showSelectedImage(src, date, title);
+      overlay.style.display = 'block'; // オーバーレイを表示
+      event.stopPropagation(); // イベントの伝播を停止
     }
+  });
+  document.addEventListener('click', function(event) {
+    // クリックされた要素がselectedImageContainer内にあるか、closeBtn自体であるかをチェック
+    const isClickInsideContainer = selectedImageContainer.contains(event.target);
+    const isCloseBtn = event.target === closeBtn;
+  
+    // クリックがselectedImageContainerの外側である、またはcloseBtnがクリックされた場合
+    if (!isClickInsideContainer || isCloseBtn) {
+      selectedImageContainer.classList.remove('active');
+      overlay.style.display = 'none'; // オーバーレイを非表示
+    }
+  });
+  
 
-    document.addEventListener('keydown', function(event) {
-      if (event.key === 'Escape') {
-        var selectedImageContainer = document.getElementById('selected-image-container');
-        selectedImageContainer.classList.remove('active');
-      }
-    });
+  // selected-image-container内のクリックイベントが親要素へ伝播しないようにする
+  selectedImageContainer.addEventListener('click', function(event) {
+    event.stopPropagation();
+  });
+});
+
+// 画像を表示する関数を定義
+function showSelectedImage(src, date, title) {
+  const selectedImage = document.getElementById('selected-image');
+  const imageTitle = document.getElementById('title');
+  const imageText = document.getElementById('text');
+
+  selectedImage.src = src;
+  imageTitle.textContent = title;
+  imageText.textContent = date;
+  document.getElementById('selected-image-container').classList.add('active');
+}
+document.getElementById('yourModalOpenButton').addEventListener('click', function() {
+  document.getElementById('overlay').style.display = 'block';
+  document.getElementById('selected-image-container').classList.add('active');
+});
+
+document.getElementById('yourModalCloseButton').addEventListener('click', function() {
+  document.getElementById('overlay').style.display = 'none';
+  document.getElementById('selected-image-container').classList.remove('active');
+});
