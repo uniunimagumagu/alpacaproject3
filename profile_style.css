@@ -3,8 +3,18 @@
   /*下の二つで横のテキストの位置を画像の真ん中の高さと指定している*/
   display: flex;
   align-items: center;
-  
+  flex-direction: column; /* 子要素を縦に並べる */
 }
+
+.logo-and-text {
+  /* 必要に応じてスタイルを追加 */
+  align-items: center;
+  display: flex;
+  justify-content: start; /* ロゴからテキストへ左揃えで配置 */
+  width: 100%; /* コンテナの幅を最大に */
+}
+
+
 .text-section{
   color: rgb(64,32,32);
   text-align: left;
@@ -62,7 +72,8 @@
 .profile-images {
   display: flex;
   justify-content: space-around; /* 画像間に均等なスペースを設ける */
-  margin: 20px 0; /* 上下のマージンを設定 */
+  width: 80%; /* テキストの幅に合わせる、調整が必要かもしれません */
+  max-width: 400px; /* コンテナの最大幅を指定、これも調整が必要かも */
 }
 
 .small-sns-image {
