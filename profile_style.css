@@ -51,10 +51,15 @@
 /*以下はテキストボックスを表示する部分*/
 .container {
   margin-left: 15%;
-  width: 400px; /* 箱の幅 これは入力文字数に対して可変にしたい？*/
+  width: 100%; /* 箱の幅 これは入力文字数に対して可変にしたい？*/
   padding: 20px; /* 箱内の余白 */
   box-sizing: border-box; /* 箱の境界線を含めたサイズ指定 */
   margin-bottom: 10px;/*他の要素と接しないように幅とってある*/
+  text-align: left;
+
+}
+.LINKS {
+  color: rgb(212, 200, 192);
 }
 .container p {
   margin: 0; /* 文章の上下の余白を除去 これのおかげで多少すっきり詰まって見えてる*/
