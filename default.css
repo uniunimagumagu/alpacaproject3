@@ -14,19 +14,13 @@ body{
 
 /*ヘッダ*/
 .header{
-    background-color: white;
-    font-size: x-large;
-    position: fixed;
-    top:0;
-    width: 100%;
-    padding:10px;/*余白により高さを取る*/
-    color:rgba(64,32,32,1);
-
-    z-index: 255;
+    color: rgb(64,32,32);
 }
 
 #headerArea{
-    height: 56px;
+    position: sticky;
+    top:0;
+    /*height: 56px;*/
 }
 
 .menu-button{
