@@ -122,7 +122,7 @@ p{
     transform: translate(-50%, -50%);
     padding: 0;/*画像選択したときの黒い背景の幅*/
     color: #fff;
-    z-index: 9999;
+    z-index: 254;
     visibility: hidden;
     border: none; /* 枠線が不要な場合はこの行を追加 */
   }
