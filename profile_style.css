@@ -1,17 +1,16 @@
 /*これはロゴ画像と横のテキストの表示を大まかに決めてる部分*/
-.logo-container {
-  /*下の二つで横のテキストの位置を画像の真ん中の高さと指定している*/
+.logo-text-images-wrapper {
   display: flex;
-  align-items: center;
   flex-direction: column; /* 子要素を縦に並べる */
+  align-items: center; /* 子要素を中央揃え */
+  width: 100%;
 }
 
 .logo-and-text {
   /* 必要に応じてスタイルを追加 */
   align-items: center;
   display: flex;
-  justify-content: start; /* ロゴからテキストへ左揃えで配置 */
-  width: 100%; /* コンテナの幅を最大に */
+  width: 100%; 
 }
 
 
@@ -20,6 +19,7 @@
   text-align: left;
   padding:0;
   margin:0;
+  width: 100%; /* コンテナ全体の幅を使用 */
 }
 .btn-style-link {
   display: inline-block;
@@ -33,15 +33,19 @@
 
 /*ロゴの表示位置を指定している。*/
 .logo-img {
-  margin-left: 15%;/*大体左上だから横から15％にした*/
+  margin-left: 33%;/*大体左上だから横から15％にした*/
+  margin-right: 2%;
+  margin-top:1.5%;
   width: 250px; /* 画像の幅を100pxに設定 */
   height: auto; /* 高さを自動調整 */
+  align-self: flex-start; /* ロゴをコンテナの左端に揃える */
 }
 .logo-text {
   margin-left: 30%; /* ロゴ画像とテキストの間隔 ここで並行移動は調整できる*/
   font-size: 16px; /* テキストのフォントサイズ */
   font-weight: bold; /* テキストの太さ */
   text-align: left;
+  width : 100%;
 }
 
 /*以下はテキストボックスを表示する部分*/
@@ -71,13 +75,13 @@
 }
 .profile-images {
   display: flex;
-  justify-content: space-around; /* 画像間に均等なスペースを設ける */
-  width: 80%; /* テキストの幅に合わせる、調整が必要かもしれません */
-  max-width: 400px; /* コンテナの最大幅を指定、これも調整が必要かも */
+  justify-content: flex-start; /* 画像を中央に配置 */
+  gap: 10px; /* 画像間の隙間 */
+  width: 100%; /* テキストの幅に合わせる */
 }
 
 .small-sns-image {
-  flex: 1; /* 画像を等間隔で伸縮させる */
-  max-width: 25%; /* 各画像がコンテナ幅の25%を超えないようにする */
+  margin-top:2%;
+  width: 50px; /* 画像の幅を50pxに設定 */
   height: auto; /* 高さを自動調整 */
 }
