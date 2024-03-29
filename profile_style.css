@@ -33,12 +33,24 @@
 
 /*ロゴの表示位置を指定している。*/
 .logo-img {
-  margin-left: 33%;/*大体左上だから横から15％にした*/
+  /*margin-left: 33%;/*大体左上だから横から15％にした*/
   margin-right: 2%;
   margin-top:1.5%;
-  width: 250px; /* 画像の幅を100pxに設定 */
+  /*width: 250px; /* 画像の幅を100pxに設定 */
   height: auto; /* 高さを自動調整 */
   align-self: flex-start; /* ロゴをコンテナの左端に揃える */
+}
+@media (min-width: 769px) {
+  .logo-img {
+    margin-left: 33%;
+    width: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .logo-img {
+    margin-left: 5%;
+    width: 200px;
+  }
 }
 .logo-text {
   margin-left: 30%; /* ロゴ画像とテキストの間隔 ここで並行移動は調整できる*/
@@ -76,7 +88,7 @@
   display: flex;
   justify-content: space-between; /* 画像間に均等なスペースを設ける */
   margin: 20px auto; /* 上下のマージンを設定し、左右は自動で中央揃え */
-  max-width: 400px; /* コンテナの最大幅を指定 */
+  /*max-width: 400px; /* コンテナの最大幅を指定 */
 }
 .profile-images {
   display: flex;
@@ -86,7 +98,7 @@
 }
 
 .small-sns-image {
-  margin-top:2%;
+  margin-top:10%;
   width: 50px; /* 画像の幅を50pxに設定 */
   height: auto; /* 高さを自動調整 */
 }
