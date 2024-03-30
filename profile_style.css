@@ -11,6 +11,7 @@
   align-items: center;
   display: flex;
   width: 100%; 
+  margin-top: 5%;
 }
 
 
@@ -35,7 +36,7 @@
 .logo-img {
   /*margin-left: 33%;/*大体左上だから横から15％にした*/
   margin-right: 2%;
-  margin-top:1.5%;
+  margin-top: 1%;
   /*width: 250px; /* 画像の幅を100pxに設定 */
   height: auto; /* 高さを自動調整 */
   align-self: flex-start; /* ロゴをコンテナの左端に揃える */
@@ -62,15 +63,14 @@
 
 /*以下はテキストボックスを表示する部分*/
 .container {
-  margin-left: 15%;
   width: 100%; /* 箱の幅 これは入力文字数に対して可変にしたい？*/
   padding: 20px; /* 箱内の余白 */
   box-sizing: border-box; /* 箱の境界線を含めたサイズ指定 */
   margin-bottom: 10px;/*他の要素と接しないように幅とってある*/
   text-align: left;
-
 }
 .LINKS {
+  margin-top: 10%;
   color: rgb(212, 200, 192);
 }
 .container p {
@@ -78,7 +78,8 @@
 }
 /*線分表示。長さ色は取りあえず*/
 .line {
-  border-top: 2px dashed #a1af71;
+  border-top: 2px dashed;
+  color: rgb(238, 220, 179);
   margin-top:10px;
   margin-bottom:10px;
   margin-left:10%;
@@ -95,10 +96,11 @@
   justify-content: flex-start; /* 画像を中央に配置 */
   gap: 10px; /* 画像間の隙間 */
   width: 100%; /* テキストの幅に合わせる */
+  margin-left: 5%; /* 文章と一致するように調整 */
 }
 
 .small-sns-image {
-  margin-top:10%;
+  margin-top:40px;
   width: 50px; /* 画像の幅を50pxに設定 */
   height: auto; /* 高さを自動調整 */
 }
