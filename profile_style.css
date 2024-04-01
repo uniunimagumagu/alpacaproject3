@@ -60,6 +60,67 @@
   text-align: left;
   width : 100%;
 }
+.food-preference {
+  font-size: 14px;
+  font-weight: bold;
+}
+.profile-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-images {
+  display: flex;
+  justify-content: flex-start; /* 画像を中央に配置 */
+  gap: 10px; /* 画像間の隙間 */
+  width: 100%; /* テキストの幅に合わせる */
+  margin-left: 5%; /* 文章と一致するように調整 */
+}
+.small-sns-image {
+  margin-top:0px;
+  width: 50px; /* 画像の幅を50pxに設定 */
+  height: auto; /* 高さを自動調整 */
+}
+/* スマートフォン向けのスタイル */
+@media (max-width: 768px) {
+  .logo-img {
+    width: 150px; /* スマートフォンではロゴの幅を小さくする */
+    margin-left: 5%; /* スマートフォンでは左マージンを調整 */
+    margin-top: 2%; /* 上マージンも調整 */
+  }
+
+  .logo-text {
+    font-size: 10px; /* スマートフォンではフォントサイズを小さくする */
+    margin-left: 2%; /* ロゴとの間隔を調整 */
+  }
+
+  /* レスポンシブに合わせて他の要素のスタイルも調整 */
+  .logo-and-text {
+    margin-top: 1%; /* 上マージンをさらに調整 */
+  }
+
+  .profile-name {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .food-preference {
+    font-size: 9px;
+    font-weight: bold;
+  }   
+  
+  .profile-images {
+    display: flex;
+    justify-content: flex-start; /* 画像を中央に配置 */
+    gap: 5px; /* 画像間の隙間 */
+    width: 100%; /* テキストの幅に合わせる */
+    margin-left: 20%; /* 文章と一致するように調整 */
+  }
+  .small-sns-image {
+    margin-top:0px;
+    width: 30px; /* 画像の幅を50pxに設定 */
+    height: auto; /* 高さを自動調整 */
+  }
+}
 
 /*以下はテキストボックスを表示する部分*/
 .container {
@@ -85,22 +146,10 @@
   margin-left:10%;
   margin-right:10%;
 }
+
 .sns-images {
   display: flex;
   justify-content: space-between; /* 画像間に均等なスペースを設ける */
   margin: 20px auto; /* 上下のマージンを設定し、左右は自動で中央揃え */
   /*max-width: 400px; /* コンテナの最大幅を指定 */
-}
-.profile-images {
-  display: flex;
-  justify-content: flex-start; /* 画像を中央に配置 */
-  gap: 10px; /* 画像間の隙間 */
-  width: 100%; /* テキストの幅に合わせる */
-  margin-left: 5%; /* 文章と一致するように調整 */
-}
-
-.small-sns-image {
-  margin-top:0px;
-  width: 50px; /* 画像の幅を50pxに設定 */
-  height: auto; /* 高さを自動調整 */
 }
