@@ -11,7 +11,7 @@
   align-items: center;
   display: flex;
   width: 100%; 
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 
@@ -19,7 +19,7 @@
   color: rgb(64,32,32);
   text-align: left;
   padding:0;
-  margin:0;
+  margin: 0;
   width: 100%; /* コンテナ全体の幅を使用 */
 }
 .btn-style-link {
@@ -36,7 +36,7 @@
 .logo-img {
   /*margin-left: 33%;/*大体左上だから横から15％にした*/
   margin-right: 2%;
-  margin-top: 1%;
+  margin-top: 5%;
   /*width: 250px; /* 画像の幅を100pxに設定 */
   height: auto; /* 高さを自動調整 */
   align-self: flex-start; /* ロゴをコンテナの左端に揃える */
@@ -100,7 +100,7 @@
 }
 
 .small-sns-image {
-  margin-top:40px;
+  margin-top:0px;
   width: 50px; /* 画像の幅を50pxに設定 */
   height: auto; /* 高さを自動調整 */
 }
