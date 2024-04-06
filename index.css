@@ -1,10 +1,10 @@
 .news-area {
-    width:70%;
+    width:100%;
     margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
     .news-area {
-      width: 100%;
+      width: 70%;
     }
 }
 
