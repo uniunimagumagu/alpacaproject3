@@ -4,10 +4,13 @@
 ギャラリーのためのcss
 ===================================*/
 .gallery{
-/*columns: 4;/*段組みの数*/
-columns: 1;/*段組みの数 モバイルファーストという概念より１列固定*/
-padding:0 5px;/*ギャラリー左右に余白をつける*/
-text-align: center; /* 画像を中央に寄せる */
+  /*columns: 4;/*段組みの数*/
+  /*columns: 1;/*段組みの数 モバイルファーストという概念より１列固定*/
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding:0px;/*ギャラリー左右に余白をつける*/
+  text-align: center; /* 画像を中央に寄せる */
 }
 /* メディアクエリ: 画面幅が768px以上の場合は2列に */
 @media only screen and (min-width: 768px) {
@@ -31,9 +34,9 @@ text-align: center; /* 画像を中央に寄せる */
 }
 
 .gallery li {
-    margin-bottom: 10px;/*各画像下に余白をつける*/
+    /*margin-bottom: 10px;/*各画像下に余白をつける*/
     display: inline-block;
-    vertical-align: top; /* 画像の上端に揃える */
+    vertical-align:middle; /* 画像の上端に揃える */
 }
 
 /*ギャラリー内のイメージは横幅100%にする*/
@@ -41,7 +44,7 @@ text-align: center; /* 画像を中央に寄せる */
   width:100%;
   height:100%;
   object-fit: contain;
-
+  /*flex-direction: row; /* 横方向に表示 */
   /*object-position: top; /* 画像の上端を画面上端に合わせる */
 }
 /*デバイス差、PCでもウィンドウサイズ小さくしたときの表示、どっちがいいかはわからないので残しておく*/
@@ -97,24 +100,43 @@ p{
   word-wrap : break-word;
 }
 .image-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: auto;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* PC版で4列になるように調整 */
+  gap: 10px;
+}
 
+@media only screen and (max-width: 768px) {
+  .image-list {
+      grid-template-columns: 1fr; /* スマホ版では1列に */
+  }
+}
+.image-item {
+  flex: 1 1 100%; /* スマホ用：デフォルトで1列 */
+}
+
+@media (min-width: 768px) {
   .image-item {
-    margin: 1px;
-    cursor: pointer;
-    
+    flex: 1 1 calc(50% - 10px); /* タブレット用：画面幅が768px以上で2列 */
   }
+}
 
-  .image-item img {
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    max-width: 100%;
+@media (min-width: 1024px) {
+  .image-item {
+    flex: 1 1 calc(33.333% - 10px); /* 小さめのPC用：画面幅が1024px以上で3列 */
   }
+}
+
+@media (min-width: 1280px) {
+  .image-item {
+    flex: 1 1 calc(25% - 10px); /* 大きめのPC用：画面幅が1280px以上で4列 */
+  }
+}
+
+.image-item img {
+  width: 100%; /* 画像の幅を親要素に合わせる */
+  height: auto; /* 画像の高さを自動調整してアスペクト比を維持 */
+  display: block; /* 画像をブロック要素として扱い、下部の余白を削除 */
+}
 
   #selected-image-container {
     position: fixed;

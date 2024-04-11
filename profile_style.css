@@ -36,7 +36,7 @@
 .logo-img {
   /*margin-left: 33%;/*大体左上だから横から15％にした*/
   margin-right: 2%;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   /*width: 250px; /* 画像の幅を100pxに設定 */
   height: auto; /* 高さを自動調整 */
   align-self: flex-start; /* ロゴをコンテナの左端に揃える */
@@ -45,12 +45,14 @@
   .logo-img {
     margin-left: 33%;
     width: 15%;
+    margin-top: 5%;
   }
 }
 @media (max-width: 768px) {
   .logo-img {
     margin-left: 5%;
     width: 200px;
+    margin-top: 20%;
   }
 }
 .logo-text {
@@ -86,7 +88,7 @@
   .logo-img {
     width: 150px; /* スマートフォンではロゴの幅を小さくする */
     margin-left: 5%; /* スマートフォンでは左マージンを調整 */
-    margin-top: 2%; /* 上マージンも調整 */
+    margin-top: 20%; /* 上マージンも調整 */
   }
 
   .logo-text {
@@ -124,11 +126,18 @@
 
 /*以下はテキストボックスを表示する部分*/
 .container {
-  width: 100%; /* 箱の幅 これは入力文字数に対して可変にしたい？*/
+  /*width: 100%; /* 箱の幅 これは入力文字数に対して可変にしたい？*/
   padding: 20px; /* 箱内の余白 */
   box-sizing: border-box; /* 箱の境界線を含めたサイズ指定 */
   margin-bottom: 10px;/*他の要素と接しないように幅とってある*/
   text-align: left;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 70%; /* 横幅を広げる */
+    font-size: 0.7em;
+    padding: 0px;
+  }
 }
 .LINKS {
   margin-top: 10%;
