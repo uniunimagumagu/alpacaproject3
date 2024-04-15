@@ -40,7 +40,7 @@
   }
   .image-container {
     position: relative;
-    overflow: hidden; /* 子要素の拡大によるオーバーフローを隠す */
+    /*overflow: hidden;  子要素の拡大によるオーバーフローを隠す */
     position: relative; /* 子要素の位置を相対的に設定するために追加 */
 
   }
