@@ -10,9 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
       const imgElement = imageItem.querySelector('img');
       const src = imgElement.src;
       // 仮の日付とタイトル、これらは動的に変更可能
-      const date = '作った日';
-      const title = 'タイトル';
-      showSelectedImage(src, date, title);
+      // const date = '作った日';
+      // const title = 'タイトル';
+      // showSelectedImage(src, date, title);
+      showSelectedImage(src);
       overlay.style.display = 'block'; // オーバーレイを表示
       event.stopPropagation(); // イベントの伝播を停止
     }
@@ -37,14 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // 画像を表示する関数を定義
-function showSelectedImage(src, date, title) {
+function showSelectedImage(src) {
   const selectedImage = document.getElementById('selected-image');
   const imageTitle = document.getElementById('title');
   const imageText = document.getElementById('text');
 
   selectedImage.src = src;
-  imageTitle.textContent = title;
-  imageText.textContent = date;
+  // imageTitle.textContent = title;
+  // imageText.textContent = date;
   document.getElementById('selected-image-container').classList.add('active');
 }
 document.getElementById('yourModalOpenButton').addEventListener('click', function() {
