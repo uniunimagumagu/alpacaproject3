@@ -1,5 +1,5 @@
 .news-area {
-    width:100%;
+    width:70%;
     margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
@@ -8,6 +8,15 @@
     }
 }
 
+/*profileから移植。長さ色は取りあえず*/
+.line {
+  border-top: 2px dashed;
+  color: rgb(238, 220, 179);
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-left:10%;
+  margin-right:10%;
+}
 /*以下home1-popup*/
 
 
@@ -31,7 +40,7 @@
   }
   .image-container {
     position: relative;
-    overflow: hidden; /* 子要素の拡大によるオーバーフローを隠す */
+    /*overflow: hidden;  子要素の拡大によるオーバーフローを隠す */
     position: relative; /* 子要素の位置を相対的に設定するために追加 */
 
   }
