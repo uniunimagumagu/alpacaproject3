@@ -115,7 +115,7 @@
     justify-content: flex-start; /* 画像を中央に配置 */
     gap: 5px; /* 画像間の隙間 */
     width: 100%; /* テキストの幅に合わせる */
-    margin-left: 20%; /* 文章と一致するように調整 */
+    /*margin-left: 20%; /* 文章と一致するように調整 */
   }
   .small-sns-image {
     margin-top:0px;
