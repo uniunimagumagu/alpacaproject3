@@ -30,8 +30,12 @@
 
   <!--<div class="glitter-wrapper">これはキラキラさせるようにつけてる。未完成-->
     <div class="image-container">   
-      <img src="index.jpg" class="fade-in-image" id="responsive-image" style="position: relative; z-index: -1;">
-  </div>
+      <picture>
+        <source media="(max-width: 768px)" srcset="img_file/index_mobile.jpg">
+        <source media="(min-width: 769px)" srcset="index.jpg">
+        <img src="index.jpg" alt="Responsive image" class="fade-in-image" style="position: relative; z-index: -1;">
+      </picture>
+        </div>
       <script src="home1_popup.js" defer></script>
   <!--</div>-->
 
