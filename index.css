@@ -9,11 +9,13 @@
 }
 .news_head {
   color: rgb(212, 200, 192);
-  margin-top: 35%;
 }
 @media (max-width: 768px){
   .news{
     font-size: 0.7em;
+  }
+  .news_head{
+    margin-top: 35%;
   }
 }
 
