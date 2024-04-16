@@ -7,6 +7,13 @@
       width: 70%;
     }
 }
+.news_head {
+  color: inherit; 
+  margin-top: 20%;
+}
+.news {
+  font-size: 0.7em;
+}
 
 /*profileから移植。長さ色は取りあえず*/
 .line {
@@ -27,22 +34,21 @@
     transition: opacity 2s ease-in-out;
     margin-left: 5%;
     margin-top: 5%;
-    width: 100%;
+    width: 105%;
     height: auto;
-    z-index: 1;
+    
   }
 @media (max-width: 768px){
   .fade-in-image{
     transform: scale(1.8); /* 画像を150%に拡大 */
     /*transform-origin: center; /* 拡大の基点を中心に設定 */
-    transform-origin: 40% 15%; /* 拡大の基点を右に60%、下に60%の位置に設定 */
+    transform-origin: 30% 20%; /* 拡大の基点を右に60%、下に60%の位置に設定 */
      
   }
   .image-container {
     position: relative;
-    /*overflow: hidden;  子要素の拡大によるオーバーフローを隠す */
-    position: relative; /* 子要素の位置を相対的に設定するために追加 */
-
+    width: 65%;
+    height: 100%;
   }
 }
   

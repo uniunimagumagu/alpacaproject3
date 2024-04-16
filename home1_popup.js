@@ -5,3 +5,20 @@ window.addEventListener('load', function() {
   var image = document.querySelector('.fade-in-image');
   image.classList.add('loaded');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var img = document.getElementById('responsive-image');
+  function checkSize() {
+      if (window.innerWidth <= 768) {
+          img.src = 'img_file/index_mobile.jpg'; // スマホ用の画像に変更
+      } else {
+          img.src = 'index.jpg'; // 通常の画像に戻す
+      }
+  }
+
+  // ウィンドウのリサイズ時にもチェック
+  window.addEventListener('resize', checkSize);
+
+  // 初期ロード時にチェック
+  checkSize();
+});
