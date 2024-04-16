@@ -45,7 +45,7 @@
   .fade-in-image{
     transform: scale(1.8); /* 画像を150%に拡大 */
     /*transform-origin: center; /* 拡大の基点を中心に設定 */
-    transform-origin: 10% 15%; /* 拡大の基点を右に60%、下に60%の位置に設定 */
+    transform-origin: 10% 5%; /* 拡大の基点を右に60%、下に60%の位置に設定 */
      
   }
   .image-container {
