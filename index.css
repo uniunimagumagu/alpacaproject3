@@ -11,8 +11,10 @@
   color: rgb(212, 200, 192);
   margin-top: 35%;
 }
-.news {
-  font-size: 0.7em;
+@media (max-width: 768px){
+  .news{
+    font-size: 0.7em;
+  }
 }
 
 /*profileから移植。長さ色は取りあえず*/
