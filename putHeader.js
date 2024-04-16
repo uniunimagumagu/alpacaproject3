@@ -1,11 +1,11 @@
 "use strict";
-function putHeader(){
-    $.ajax({/*非同期読み込みらしい*/
-        url: "header.html",
-        cache: false,
-        success: function(html){
-            document.getElementById("headerArea").innerHTML=html
-            console.log("header loaded")
-        }
-    });
+async function putHeader(){
+    try {
+        const response = await fetch("header.html");
+        const html = await response.text();
+        document.getElementById("headerArea").innerHTML = html;
+        console.log("header loaded");
+    } catch (error) {
+        console.error('Header could not be loaded', error);
+    }
 }
