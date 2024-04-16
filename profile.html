@@ -5,16 +5,11 @@
   <meta charset="utf8">
   <title>プロフィール画面</title>
   <link rel="stylesheet" href="default.css">
-  <link rel="stylesheet" href="profile_style.css"> <!-- CSSファイルを読み込む -->
-
-  <!--ヘッダとフッダ用のstyle,srcをロード-->
-  <script src="header.js" defer></script>
-
-  <!--アイコン(ファビコン) 本番は.icoファイルを利用予定だが代用画像を利用-->
+  <link rel="stylesheet" href="profile_style.css">
   <link rel="shortcut icon" href="fabicon.png">
-
-  <!--jQuery(jsライブラリ)のロード-->
   <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="putHeader.js"></script>
+  <script src="header.js"></script>
 
 </head>
 
@@ -22,8 +17,6 @@
 
   <!--ヘッダ部分-->
   <div id="headerArea"></div>
-  <script src="putHeader.js"></script>
-  <script src="header.js"></script>
   <script>putHeader()</script> 
   <!--ヘッダ終了-->
 
