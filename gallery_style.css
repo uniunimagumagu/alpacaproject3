@@ -9,7 +9,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  padding-left: 10%;
+  /* padding-left: 10%; */
   text-align: center; /* 画像を中央に寄せる */
 }
 /* メディアクエリ: 画面幅が768px以上の場合は2列に */
